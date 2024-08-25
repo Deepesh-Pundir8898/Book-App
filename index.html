@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="images/Screenshot_3.png" alt="Logo">
+            </a>
+        </div>
+        <div class="header-right-part">
+            <div class="dark-mode">
+                <div class="circle-btn"></div>
+            </div>
+            <button class="sign-up" id="signup-btn">Sign up <span><i class="fa-solid fa-arrow-right"></i></span></button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="book-categories" id="all-categories">
+                <ul>
+                    <li id="all-category">All Categories</li>
+                </ul>
+            </div>
+            <div class="support-ukraine">
+                
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Best Sellers <span>Books</span></h1>
+            <div class="books-container">
+             
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Book Details -->
+    <div id="modal" class="modal">
+        <div id="modal-content" class="modal-content">
+            
+        </div>
+    </div>
+
+    <!-- Login/Signup forms  -->
+    <div id="login-form" class="form-container" style="display: none;">
+        <form>
+            <h2>Login</h2>
+            <input type="text" placeholder="Username"  name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="signup-form" class="form-container" style="display: none;">
+        <form>
+            <h2>Sign Up</h2>
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Include FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/ea6665dc53.js" crossorigin="anonymous"></script>
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
