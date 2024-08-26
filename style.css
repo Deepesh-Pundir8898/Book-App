@@ -73,7 +73,9 @@ header{
     .book-categories ul li:hover{
         color: #ebc744;
     }
-    
+    form h2{
+        color: white;
+    }
    
 }
 /* dark mode css end */
@@ -101,11 +103,19 @@ header{
     display: flex;
 }
 .main-container .sidebar{
-    width: 25%;
-    height: 32rem;
+    width: 30%;
     padding: 0 2rem;
     font-size: 1.2rem;
-    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 5rem;
+}
+.main-container .sidebar .book-categories{
+    width: 100%;
+    height: 32rem;
+    overflow-x: hidden;
+
 }
 .book-categories ul #all-category{
     color: #4f2ee8;
@@ -129,6 +139,67 @@ header{
     color: #4f2ee8;
     font-weight: 700;
 }
+
+.main-container .sidebar .support-ukraine{
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(#4f2ee8 0%, #dcdcdc 100%);
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    h2{
+        margin: 0.5rem 0 1rem 0;
+    }
+}
+.main-container .sidebar .support-ukraine .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 18rem;
+    overflow-y:scroll;
+    .support-orgs{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+}
+.main-container .sidebar .support-ukraine .down-button{
+    width: 50px;
+    height: 50px;
+    /* padding: 1rem; */
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50%;
+    background-color: #ebc744;
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .main-content{
     width: 75%;
     padding: 0 2rem;
@@ -271,7 +342,7 @@ header{
     margin: 5rem auto;
     text-align: center;
     padding: 2rem;
-    box-shadow: 0 0 5px #202024;
+    box-shadow: 0 0 5px rgb(193, 182, 182);
     border-radius: 10px;
 
 }

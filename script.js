@@ -6,6 +6,7 @@ const signUpForm = document.querySelector("#signup-form");
 const modal = document.querySelector("#modal");
 const modalContent = document.querySelector("#modal-content");
 
+
 // Dark mode toggle
 darkmode.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode-active');
@@ -133,6 +134,17 @@ function showBookDetails(book) {
         modal.style.display = "none";
     });
 }
+
+//  ukraine support down arrow button
+
+document.querySelector('.down-button').addEventListener('click', () => {
+    const wrapper = document.querySelector('.wrapper');
+    
+    wrapper.scrollBy({
+        top: 100,
+        behavior: 'smooth'
+    });
+});
 
 // Handle login and signup (basic functionality)
 
